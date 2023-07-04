@@ -14,10 +14,19 @@ const Home = () => {
   if (error) return <h1>An error has occured...+{error.message}</h1>;
   console.log(data);
 
+  const productElements = data.map(function (element) {
+    return (
+      <Card
+        name={element.title}
+        price={element.price}
+        image_url={element.image}
+      />
+    );
+  });
   return (
     <div>
       <h1>Homepage</h1>
-      <Card />
+      <div className="grid grid-cols-4 gap-4">{productElements}</div>
     </div>
   );
 };
