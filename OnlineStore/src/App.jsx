@@ -1,10 +1,19 @@
+import React from "react";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Search from "./Pages/Search";
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   return (
-    <h1 className="text-3xl underline font-bold text-red-400 font-serif">
-      Online Store
-    </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/search" element={<Search />}></Route>
+        <Route path="/details" element={<ProductDetails />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
