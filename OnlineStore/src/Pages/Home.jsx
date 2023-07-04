@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import Navbar from "../components/Navbar";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -25,7 +26,7 @@ const Home = () => {
   });
   return (
     <div>
-      <h1>Homepage</h1>
+      <Navbar />
       <div className="grid grid-cols-4 gap-4">{productElements}</div>
     </div>
   );

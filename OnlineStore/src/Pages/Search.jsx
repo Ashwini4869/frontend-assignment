@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 const Search = () => {
-  return <div>Search</div>;
+  return (
+    <div>
+      <Navbar />
+      <h1>Search</h1>
+    </div>
+  );
 };
 
 export default Search;
