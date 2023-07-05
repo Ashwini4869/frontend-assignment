@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Searchbar from "../components/Searchbar";
 
 const Search = () => {
   return (
     <div>
       <Navbar />
-      <h1>Search</h1>
+      <Searchbar />
     </div>
   );
 };
