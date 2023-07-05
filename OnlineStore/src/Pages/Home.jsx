@@ -18,6 +18,7 @@ const Home = () => {
   const productElements = data.map(function (element) {
     return (
       <Card
+        key={element.id}
         name={element.title}
         price={element.price}
         image_url={element.image}

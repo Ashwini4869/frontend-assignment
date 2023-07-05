@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import Search from "./Pages/Search";
 import ProductDetails from "./Pages/ProductDetails";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({});
 
 function App() {
   return (
