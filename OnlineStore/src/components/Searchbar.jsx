@@ -20,7 +20,7 @@ const Searchbar = ({ changeSearch }) => {
       <div className="p-4">
         <form onSubmit={formik.handleSubmit}>
           <label
-            className="font-bold ml-2 text-xl text-slate-700"
+            className="font-bold ml-2 text-xl text-slate-700 font-serif"
             htmlFor="query"
           >
             Search for Products:
