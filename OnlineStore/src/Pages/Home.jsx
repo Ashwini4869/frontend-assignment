@@ -19,6 +19,7 @@ const Home = () => {
     return (
       <Card
         key={element.id}
+        id={element.id}
         name={element.title}
         price={element.price}
         image_url={element.image}

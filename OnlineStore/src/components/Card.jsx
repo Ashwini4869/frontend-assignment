@@ -1,8 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Card = (props) => {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    console.log(props.id);
+    navigate("/details", { state: { id: props.id } });
+  }
   return (
-    <div className="w-60 rounded-md cursor-pointer border-2">
+    <div
+      onClick={() => handleClick()}
+      className="w-60 rounded-md cursor-pointer border-2"
+    >
       <div>
         <img src={props.image_url}></img>
         <h1>{props.name}</h1>
