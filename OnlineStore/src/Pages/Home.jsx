@@ -11,8 +11,18 @@ const Home = () => {
   };
   const { data, isLoading, error } = useQuery(["Data"], fetchData);
 
-  if (isLoading) return <h1>Loading...</h1>;
-  if (error) return <h1>An error has occured...+{error.message}</h1>;
+  if (isLoading)
+    return (
+      <h1 className="text-center p-4 mt-16 text-4xl font-extrabold font-mono">
+        Loading...
+      </h1>
+    );
+  if (error)
+    return (
+      <h1 className="text-center p-4 mt-16 text-4xl font-extrabold font-mono">
+        An error has occured...+{error.message}
+      </h1>
+    );
   console.log(data);
 
   const productElements = data.map(function (element) {
@@ -29,7 +39,9 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="grid grid-cols-4 gap-4">{productElements}</div>
+      <div className="grid place-items-center grid-cols-4 gap-6">
+        {productElements}
+      </div>
     </div>
   );
 };

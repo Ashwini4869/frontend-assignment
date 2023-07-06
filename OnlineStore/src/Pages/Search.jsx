@@ -16,8 +16,18 @@ const Search = () => {
     return response.data;
   };
   const { data, isLoading, error } = useQuery(["Data"], fetchData);
-  if (isLoading) return <h1>Loading...</h1>;
-  if (error) return <h1>An error has occured...+{error.message}</h1>;
+  if (isLoading)
+    return (
+      <h1 className="text-center p-4 mt-16 text-4xl font-extrabold font-mono">
+        Loading...
+      </h1>
+    );
+  if (error)
+    return (
+      <h1 className="text-center p-4 mt-16 text-4xl font-extrabold font-mono">
+        An error has occured...+{error.message}
+      </h1>
+    );
   console.log(data);
 
   const searchElements = data
