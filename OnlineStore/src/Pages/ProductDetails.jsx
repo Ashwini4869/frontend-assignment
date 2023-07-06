@@ -37,7 +37,7 @@ const ProductDetails = () => {
         onClick={() => {
           navigate("/");
         }}
-        className="bg-slate-700 px-4 py-2 ml-10 rounded-full text-gray-200 font-semibold hover:bg-slate-600"
+        className="bg-slate-700 px-4 py-2 ml-10 rounded-full text-gray-200 font-semibold hover:bg-slate-600 active:bg-slate-700"
       >
         Go Home
       </button>

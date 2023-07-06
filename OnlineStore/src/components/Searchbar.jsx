@@ -38,7 +38,7 @@ const Searchbar = ({ changeSearch }) => {
           ></input>
           <br />
           <input
-            className="cursor-pointer bg-indigo-500 w-1/4 rounded-full hover:bg-indigo-400 mt-4 py-2 font-bold text-slate-100"
+            className="cursor-pointer bg-indigo-500 w-1/4 rounded-full hover:bg-indigo-400 active:bg-indigo-500 mt-4 py-2 font-bold text-slate-100"
             type="submit"
             value="Submit"
           />

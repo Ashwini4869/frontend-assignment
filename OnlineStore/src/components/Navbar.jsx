@@ -8,7 +8,10 @@ const Navbar = () => {
         OnlineStore
       </Link>
       <p className="font-mono text-lg">Happy Shopping!</p>
-      <Link className="mr-6 text-xl hover:text-[#80ceff]" to="/search">
+      <Link
+        className="mr-6 text-[#21222a] font-sans bg-gray-300 px-4 py-[6px] rounded-full hover:bg-gray-100 active:bg-gray-300"
+        to="/search"
+      >
         Search
       </Link>
     </nav>
