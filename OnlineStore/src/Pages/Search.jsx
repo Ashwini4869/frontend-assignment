@@ -54,7 +54,9 @@ const Search = () => {
     <div>
       <Navbar />
       <Searchbar changeSearch={changeSearch} />
-      <div>{searchElements}</div>
+      <div className="mt-6 grid place-items-center grid-cols-4 gap-6">
+        {searchElements}
+      </div>
     </div>
   );
 };
